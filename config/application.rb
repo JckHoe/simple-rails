@@ -30,8 +30,8 @@ module MyApiApp
 
 
     # Enable cookies and sessions in API mode
-    config.middleware.use ActionDispatch::Cookies
-    config.middleware.use ActionDispatch::Session::CookieStore, key: "_my_api_app_session"
+    # config.middleware.use ActionDispatch::Cookies
+    # config.middleware.use ActionDispatch::Session::CookieStore, key: "_my_api_app_session"
 
     # For CSRF protection to work, middleware for request forgery protection should be enabled
     config.api_only = false  # This allows session and cookie middleware to work properly
